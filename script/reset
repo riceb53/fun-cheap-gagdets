@@ -1,0 +1,11 @@
+#!/bin/sh
+cd "$(dirname "$0")/.."
+
+# === script/reset ===
+# reset everything as if the project was just cloned and setup for the first time
+#
+# to use:
+# $ . script/reset
+
+rails db:drop
+. script/setup

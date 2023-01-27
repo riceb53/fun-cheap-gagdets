@@ -1,0 +1,11 @@
+#!/bin/sh
+cd "$(dirname "$0")/.."
+
+# === script/server ===
+# setup and run the server
+#
+# to use:
+# $ . script/server
+
+. script/update
+rails server
