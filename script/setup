@@ -1,0 +1,11 @@
+#!/bin/sh
+cd "$(dirname "$0")/.."
+
+# === script/setup ===
+# setup the app for the first time after cloning
+#
+# to use:
+# $ . script/setup
+
+rails db:create db:migrate db:seed
+. script/update

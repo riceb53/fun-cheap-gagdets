@@ -1,0 +1,11 @@
+#!/bin/sh
+cd "$(dirname "$0")/.."
+
+# === script/update ===
+# make sure everything is up to date
+#
+# to use:
+# $ . script/update
+
+bundle install
+rails db:migrate
