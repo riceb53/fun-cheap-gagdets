@@ -7,5 +7,5 @@ cd "$(dirname "$0")/.."
 # to use:
 # $ . script/server
 
-. scripts/update
+. script/update
 rails server
